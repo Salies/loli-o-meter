@@ -18,7 +18,7 @@
     <img src="shota.jpg" class="shotaimg">
     <img src="loli.png" class="lolimg">
     <input type="radio" name="option" value="loli" onchange="change(this.value);document.querySelector('.result').innerHTML = '';" checked> Loli<input type="radio" name="option" value="shota" onchange="change(this.value)"> Shota<br><br>
-    <div style="margin-top: -40px;">
+    <div style="margin-top: -40px;margin-bottom: 65px;">
         Altura: <input type="text" class="height" required> metros<br>
         Peso: <input type="text" class="weight" required> kg<br>
         Idade: <input type="text" class="age" required> anos<br>
@@ -30,6 +30,15 @@
         <button type="submit" onclick="formula()">Enviar</button><br><br>
 
         <span class="result"></span>
+    </div>
+    <div class="comaparativo">
+        <u><b>Comparativo:</b></u><br>
+        <b>abaixo de 0.75</b> - Não loli<br>
+        <b>0.75 à 1</b> - Loli nível básico<br>
+        <b>1 à 1.75</b> - Loli nível decente<br>
+        <b>2 à 5</b> - Loli nível top<br>
+        <b>5 à 10</b> - Loli nível topper<br>
+        <b>10 ou mais</b> - Loli nível cadeia
     </div>
 </div>
 

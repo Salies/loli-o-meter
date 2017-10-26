@@ -38,10 +38,10 @@ function change(value){
     }
 }
 
-function formula(input){
+function formula(){
     //freuqnecy, height, weight, age, bust, cuteness, user age
     var data = [eval(value('.freq').replace(/,/g, '.')), eval(value('.height').replace(/,/g, '.')), eval(value('.weight').replace(/,/g, '.')), eval(value('.age').replace(/,/g, '.')), eval(value('.bust').replace(/,/g, '.')), eval(1 + ((value('.cuteness').replace(/,/g, '.')) / 100)) , eval(value('.u-age').replace(/,/g, '.'))];
-    var loli = (data[0] * data[5] / (data[1] * data[2] * data[3] * data[4])).toFixed(2);
+    var loli = (data[0] * data[5] / (data[1] * data[2] * data[4])).toFixed(2);
 
     if(type=='shota'){var sex = ["e", "o"];}
     else{var sex = ["a", "a"];}
