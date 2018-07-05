@@ -1,0 +1,23 @@
+{
+  "name": "loli-calculator",
+  "version": "1.0.0",
+  "description": "A loli-o-meter.",
+  "main": "index.html",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salies/loli-o-meter.git"
+  },
+  "author": "Salies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Salies/loli-o-meter/issues"
+  },
+  "homepage": "https://github.com/Salies/loli-o-meter#readme"
+}

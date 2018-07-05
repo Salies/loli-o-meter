@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="shota.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>A Calculadora Loli</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="https://saliesbox.com/favicon.png">
-    <title>Loli Calculator</title>
-    <meta property="og:url" content="https://saliesbox.com/loli">
-    <meta property="og:title" content="Calculadora de Quoeficiente Loli">
-    <meta property="og:site_name" content="SaliesBox">
-    <meta property="og:description" content="Uma calculadora de quoeficiente loli / shota.">
-    <meta property="og:image" content="https://imgur.com/ulq1mPk.jpg">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<div class="wrapper">
-    <img src="shota.jpg" class="shotaimg">
-    <img src="loli.png" class="lolimg">
-    <input type="radio" name="option" value="loli" onchange="change(this.value);document.querySelector('.result').innerHTML = '';" checked> Loli<input type="radio" name="option" value="shota" onchange="change(this.value)"> Shota<br><br>
-    <div style="margin-top: -40px;margin-bottom: 65px;">
-        Altura: <input type="text" class="height" required> metros<br>
-        Peso: <input type="text" class="weight" required> kg<br>
-        Idade: <input type="text" class="age" required> anos<br>
-        <span class="d">Diâmetro do busto:</span> <input type="text" class="bust" required> cm<br>
-        Frequência da voz: <input type="text" class="freq" required> Hz<br>
-        Bônus de fofura (opcional): <input type="text" class="cuteness"> %<br>
-        Sua idade (opcional): <input type="text" class="u-age"> anos<br>
-
-        <button type="submit" onclick="formula()">Enviar</button><br><br>
-
-        <span class="result"></span>
+    <div class="wrapper">
+        <div class="title">A Calculadora Loli</div>
+        <div class="picture">
+            <div></div>
+        </div>
+        <div class="form">
+            <section>
+                <input name="subject" type="radio" value="Proeminência do busto (em cm)" onchange="picture(this.value)" checked> Loli <input name="subject" type="radio" value="Comprimento peniano (em cm)" onchange="picture(this.value)"> Shota
+            </section>
+            <section>
+                <input type="text" placeholder="Altura (em m)">
+            </section>
+            <section>
+                <input type="text" placeholder="Peso (em kg)">
+            </section>
+            <section>
+                <input type="text" placeholder="Proeminência do busto (em cm)">
+            </section>
+            <section>
+                <input type="text" placeholder="Frequência da voz (em Hz)">
+            </section>
+            <section class="submit">
+                Calcular
+            </section>
+        </div>
+        <div class="result">
+        </div>
+        <div class="referencial">
+            <b><u>Referencial:</u></b><br>
+            <b>abaixo de 0.75</b> - Não loli<br>
+            <b>0.75 à 1</b> - Loli básica<br>
+            <b>1 à 1.75</b> - Loli decente<br>
+            <b>2 à 5</b> - Loli top<br>
+            <b>5 à 10</b> - Loli topper<br>
+            <b>10 ou mais</b> - Loli topíssima
+        </div>
     </div>
-    <div class="comaparativo">
-        <u><b>Comparativo:</b></u><br>
-        <b>abaixo de 0.75</b> - Não loli<br>
-        <b>0.75 à 1</b> - Loli nível básico<br>
-        <b>1 à 1.75</b> - Loli nível decente<br>
-        <b>2 à 5</b> - Loli nível top<br>
-        <b>5 à 10</b> - Loli nível topper<br>
-        <b>10 ou mais</b> - Loli nível cadeia
-    </div>
-</div>
-
-<script src ="loli.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
